@@ -144,6 +144,7 @@ class PersistentTabView extends PersistentTabViewBase {
     this.selectedTabScreenContext,
     this.hideNavigationBarWhenKeyboardShows = true,
     this.backgroundColor = CupertinoColors.white,
+    ValueChanged<int>? onItemSelected,
     CutsomWidgetRouteAndNavigatorSettings routeAndNavigatorSettings =
         const CutsomWidgetRouteAndNavigatorSettings(),
     this.confineInSafeArea = true,
@@ -160,6 +161,7 @@ class PersistentTabView extends PersistentTabViewBase {
           margin: margin,
           routeAndNavigatorSettings: routeAndNavigatorSettings,
           backgroundColor: backgroundColor,
+          onItemSelected: onItemSelected,
           floatingActionButton: floatingActionButton,
           customWidget: customWidget,
           itemCount: itemCount,
